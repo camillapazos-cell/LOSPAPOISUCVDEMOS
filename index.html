@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harvey Aquini</title>
+  <style>
+    body { font-family: Calibri, Arial, sans-serif; margin: 0; background: #f7fafc; color: #1f2d3d; text-align: center; padding: 80px 24px; }
+    h1 { color: #051c2c; font-size: 2.4rem; }
+    p { font-size: 1.2rem; }
+    .boton-comenzar { margin-top: 32px; padding: 14px 36px; font-size: 1.1rem; font-family: inherit; color: #ffffff; background: #1e6fd9; border: none; border-radius: 8px; cursor: pointer; }
+    .boton-comenzar:hover { background: #1858b0; }
+  </style>
+</head>
+<body>
+  <h1>Harvey Aquini</h1>
+  <p>Hackathon de Salud Mental con IA · UCV</p>
+  <p>Pídele a Claude que cambie esta página.</p>
+  <p id="fecha-actual"></p>
+  <button class="boton-comenzar">Comenzar</button>
+  <script>
+    document.getElementById('fecha-actual').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
